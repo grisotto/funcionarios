@@ -1,6 +1,7 @@
 package com.empresa.funcionarios.adapter.out.postgres.entity;
 
 
+import com.empresa.funcionarios.domain.Funcionario;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.NaturalId;
@@ -49,6 +50,16 @@ public class FuncionarioEntity implements Serializable {
         this.salario = salario;
     }
 
+    public FuncionarioEntity(Funcionario funcionario) {
+
+        this.nome = funcionario.getNome();
+        this.cpf = funcionario.getCpf();
+        this.dataNascimento = funcionario.getDataNascimento();
+        this.telefone = funcionario.getTelefone();
+        this.endereco = funcionario.getEndereco();
+        this.salario = funcionario.getSalario();
+
+    }
 
     @Override
     public boolean equals(Object o) {
