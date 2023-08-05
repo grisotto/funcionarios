@@ -3,9 +3,11 @@
 Este projeto disponibiliza api para gerenciar os funcionarios da empresa.
 
 ## Para rodar
+
 Ter o java e o Maven instalados.
 
 `docker compose -f docker-compose-postgres up -d`
+
 
 `mvn spring-boot:run`
 
