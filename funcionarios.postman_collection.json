@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "d3487edd-e140-450c-ac2b-de453eb2f1bf",
+		"name": "funcionarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "347078"
+	},
+	"item": [
+		{
+			"name": "Criar Funcionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Rafael\",\r\n    \"cpf\": \"04964245055\",\r\n    \"data_nascimento\": \"15/01/1990\",\r\n    \"telefone\": \"19988445566\",\r\n    \"endereco\": \"rua jose\",\r\n    \"salario\": 3002.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Funcionarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar um Funcionario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionarios/04964245055",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionarios",
+						"04964245055"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular Aumento Salario Funcionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionarios/15562893088/calculo_aumento_salario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionarios",
+						"15562893088",
+						"calculo_aumento_salario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calcular Imposto Funcionario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/funcionarios/04964245055/calculo_imposto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"funcionarios",
+						"04964245055",
+						"calculo_imposto"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
