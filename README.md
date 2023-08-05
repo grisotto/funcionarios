@@ -2,27 +2,34 @@
 
 Este projeto disponibiliza api para gerenciar os funcionarios da empresa.
 
+## Para rodar
+Ter o java e o Maven instalados.
+`docker compose -f docker-compose-postgres up -d`
+`mvn spring-boot:run`
+
+ou
+`docker compose up -d`
+
+utiliza a collection do postman para fazer as requisicoes
 
 ### Funcionarios API
-- [ ] Dockerfile
-- [ ] Docker-compose
-- [ ] Unit tests
+- [X] Dockerfile
+- [X] Docker-compose
+- [X] Unit tests
 - [ ] Swagger
-- [ ] Jacoco
-- [ ] Bean validation
+- [X] Bean validation
 - [ ] Cache
-- [ ] Handle exception
-- [ ] Controller Advise
+- [X] Handle exception
+- [X] Controller Advise
 - [ ] Environment configuration(dev, deploy)
 - [ ] Tracing id
-- [ ] Logs
+- [X] Logs
 - [ ] Metrics
 - [ ] Integration tests
+- [X] Flyway
 
 ### Postgres
 
-- [ ] Docker-compose
-- [ ] Flyway
+- [X] Docker-compose
 - [ ] Environment configuration
 - [ ] Security
-- [ ] Gateway
